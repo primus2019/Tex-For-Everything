@@ -1,0 +1,42 @@
+\documentclass[letterpaper]{report}
+\usepackage{reportstyle}
+
+
+\begin{document}
+    \pagestyle{fancy}
+
+    \thispagestyle{empty}
+
+    \begin{titlepage}
+        \maketitle
+    \end{titlepage}
+
+	\begin{abstract}
+		\lipsum[1]
+    \end{abstract}
+    
+    \tableofcontents
+
+    \chapter{Default Chapter}
+	
+	\section{Introduction}
+	
+	\lipsum[10]
+
+	\medskip
+
+	%% If you want to use the bibliography feature, 
+	%% 1. run latex on tex;
+	%% 2. run 'biber outputs/[bcfname]' on prompt command line;
+	%% 3. run latex on tex.
+
+	Some paper \cite{einstein, dirac}
+
+	\printbibliography
+
+	\newappendix{Optional Appendix}
+
+	\lipsum[1]
+
+	\inputminted{octave}{codes/default.py}
+\end{document}
