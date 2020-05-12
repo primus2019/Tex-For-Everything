@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{assignmentstyle}
+
+\begin{document}
+	\maketitle
+	\pagestyle{fancy}
+	\thispagestyle{empty}
+	
+	\question{Default Question}
+	
+	\lipsum[1]
+
+	\question*{1.1}{Specified Question}
+
+	\lipsum[1]
+
+	\nocite{*}
+
+	\printbibliography
+
+	\appendix{Optional Appendix}
+
+	\lipsum[1]
+
+	\medskip
+	
+	\inputminted{octave}{codes/default.py}
+\end{document}
